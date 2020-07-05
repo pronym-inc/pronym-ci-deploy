@@ -1,0 +1,5 @@
+---
+project_name: pronym_ci
+django_app_git_url: git@github.com:pronym-inc/pronym-ci.git
+django_app_extra_apt_dependencies:
+  - libcurl4-nss-dev

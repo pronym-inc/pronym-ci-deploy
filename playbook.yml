@@ -1,0 +1,17 @@
+---
+- hosts: all_in_one
+  become: yes
+  roles:
+    - common-vars
+    - pronym-ci-common
+    - secrets
+    - configure-server
+    - supervisor
+    - postgres
+    - redis
+    - django-application
+    - django-static
+    - django-runserver
+    - celery
+    - celery-beat
+    - nginx
