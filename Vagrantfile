@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
     config.vm.synced_folder "src", "/webapps/pronym_ci/src"
     config.vm.define "main" do |all_in_one|
         all_in_one.vm.box = "ubuntu/bionic64"
-        all_in_one.vm.network "private_network", ip: "192.168.70.1"
+        all_in_one.vm.network "private_network", ip: "192.168.70.2"
         all_in_one.vm.provider "virtualbox" do |v|
             v.memory = 2048
         end

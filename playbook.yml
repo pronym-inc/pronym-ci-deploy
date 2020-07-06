@@ -15,3 +15,18 @@
     - celery
     - celery-beat
     - nginx
+- hosts: web
+  become: yes
+  roles:
+    - common-vars
+    - pronym-ci-common
+    - secrets
+    - configure-server
+    - supervisor
+    - redis
+    - django-application
+    - django-static
+    - django-runserver
+    - celery
+    - celery-beat
+    - nginx
